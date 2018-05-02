@@ -17,9 +17,22 @@ $("button").click(function(){
   });*/
    $.ajax({
              type: "get",
-             async: false,
+             async: true,
              url: "https://api.map.baidu.com/location/ip",
              data: {"ip":"","ak":"nHGC9bRNfmfsfee7Ga41X0WNyvVWinca","sn":"","coor":""},
+             dataType: "jsonp",
+             success: function(json){
+                 console.info(json);
+             },
+             error: function(){
+                 alert('fail');
+             }
+         });
+  $.ajax({
+             type: "get",
+             async: true,
+             url: "http://api.map.baidu.com/highacciploc/v1",
+             data: {"qcip":"","ak":"nHGC9bRNfmfsfee7Ga41X0WNyvVWinca","extensions":3,"coord":""},
              dataType: "jsonp",
              success: function(json){
                  console.info(json);
