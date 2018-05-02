@@ -12,7 +12,7 @@
 </div>
 <script>
 $("button").click(function(){
-  $.getJSON("https://api.map.baidu.com/location/ip?ip=&ak=nHGC9bRNfmfsfee7Ga41X0WNyvVWinca&sn=&coor=",function(result){
+  $.getJSON("https://api.map.baidu.com/location/ip",{"ip":"","ak":"nHGC9bRNfmfsfee7Ga41X0WNyvVWinca","sn":"","coor":""},function(result){
     console.info(result);
   });
 });
