@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<title>百度地图测试</title>
+</head>
+
+<body>
+<div id="wrapper">
+<button>获取地址</button>
+</div>
+<script>
+$("button").click(function(){
+  $.getJSON("https://api.map.baidu.com/location/ip?ip=&ak=nHGC9bRNfmfsfee7Ga41X0WNyvVWinca&sn=&coor=",function(result){
+    console.info(result);
+  });
+});
+</script>
+</body>
+</html>
