@@ -12,9 +12,22 @@
 </div>
 <script>
 $("button").click(function(){
-  $.getJSON("https://api.map.baidu.com/location/ip",{"ip":"","ak":"nHGC9bRNfmfsfee7Ga41X0WNyvVWinca","sn":"","coor":""},function(result){
+  /*$.getJSON("https://api.map.baidu.com/location/ip",{"ip":"","ak":"nHGC9bRNfmfsfee7Ga41X0WNyvVWinca","sn":"","coor":""},function(result){
     console.info(result);
-  });
+  });*/
+   $.ajax({
+             type: "get",
+             async: false,
+             url: "https://api.map.baidu.com/location/ip",
+             data: {"ip":"","ak":"nHGC9bRNfmfsfee7Ga41X0WNyvVWinca","sn":"","coor":""},
+             dataType: "jsonp",
+             success: function(json){
+                 console.info(json);
+             },
+             error: function(){
+                 alert('fail');
+             }
+         });
 });
 </script>
 </body>
