@@ -11,8 +11,6 @@ tags: wmcode UiBot 验证码
 
 &nbsp;&nbsp;&nbsp;&nbsp;该验证码插件为《完美验证码识别系统V3.2.1》的python封装，提供给UiBot实现需验证码识别的场景的解决方案。
 
----
-
 
 
 ## 载入识别库
