@@ -1,8 +1,13 @@
-# 验证码插件使用帮助文档
-
-标签（空格分隔）： wmcode UiBot 验证码
-
 ---
+layout: post
+title:  "验证码插件使用帮助文档"
+date:   2019-07-03 18:39:54
+categories: 验证码
+tags: wmcode UiBot 验证码
+---
+
+* content
+{:toc}
 
 &nbsp;&nbsp;&nbsp;&nbsp;该验证码插件为《完美验证码识别系统V3.2.1》的python封装，提供给UiBot实现需验证码识别的场景的解决方案。
 
